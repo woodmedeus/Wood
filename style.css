@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: rgb(0, 225, 255);
+    font-family: sans-serif;
+}
+
+img{
+    width: 100%;
+}
+header {
+    background-color: aquamarine;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+   position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    position: absolute;
+}
+
+.nav-bar {
+    background-color:rgb(0, 225, 255) ;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bar-bnt {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 0;
+    top: 50px;
+    background-color:rgb(0, 225, 255);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 60px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: hsl(197, 96%, 39%);
+    transition: 0.3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 95vh;
+    z-index: 4;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.portada {
+    height: 150px;
+    overflow: hidden;
+}
+
+.cont-avat {
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.avatar{
+    position: relative;
+    top: -75px;
+    margin: auto;
+    height: 175px;
+    width: 175px;
+    justify-content: space-around;
+}
+
+.avatar-pic {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+.avatar-1{
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.redes {
+    position: absolute;
+    bottom: -75px;
+}
